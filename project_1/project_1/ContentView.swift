@@ -12,6 +12,10 @@ struct ContentView: View {
         VStack {
             Text("Girls can u see that ?")
                 .font(.largeTitle)
+           
+            
+            Text("Shaden yes")
+            
         }
         .padding()
     }
