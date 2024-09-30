@@ -19,6 +19,11 @@ struct ContentView: View {
             Text("maram yes")
             Text("Wejdan YES")
             
+            
+            Text("this is nooras branch")
+                .font(.largeTitle)
+            
+            
         }
         .padding()
     }
