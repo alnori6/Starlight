@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="74px" height="71px" viewBox="0 0 74 71" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>small_sad</title>
+    <g id="High-Fid-Prototype-(Final)" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iPhone-15-Pro-home-" transform="translate(-204, -619)">
+            <g id="small_sad" transform="translate(204, 619)">
+                <polyline id="Path-3" stroke="#5F3F82" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" points="24 42 24 54.5 24 67 19 67"></polyline>
+                <polyline id="Path-3" stroke="#5F3F82" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" points="43 43 43 55.5 43 68 38 68"></polyline>
+                <path d="M7.79508812,46.7105346 C0.277409234,43.8719056 -0.542360641,35.7057471 0.235363232,32.3867429 C0.621656529,30.7382026 1.76183468,28.4463319 3.22499877,26.7620848 C4.70762134,25.0554391 6.51561543,23.9645204 7.24619731,23.5462975 C8.2139142,22.9923263 9.65034128,22.4258209 11.5554785,21.8467815 C13.1197437,12.0495229 17.4458563,5.45527003 24.5338164,2.06402287 C29.252989,-0.193873696 37.8417799,-1.3996089 45.2279336,2.7480132 C49.162229,4.95727813 54.050599,10.2679347 54.6464305,13.1614548 C54.8858687,14.3242317 56.4533128,13.8906941 59.5757274,14.3374521 C64.2233068,15.0024321 70.6231822,19.5056249 72.6715307,24.7927329 C74.353462,29.1340607 74.2889871,33.1111868 73.3079407,36.0803223 C72.2711779,39.2180833 70.5058891,41.4261984 70.0094077,41.8550947 C69.0669709,42.6692394 66.5810671,46.05962 61.5644219,46.9058591 C51.8957526,48.5368306 42.8415762,47.5511342 34.7634096,47.7377882 C22.1912352,48.0282808 12.3719409,48.4387258 7.79508812,46.7105346 Z" id="Path-2" fill="#5F3F82"></path>
+                <circle id="Oval" stroke="#FFFCF7" fill="#000000" cx="20" cy="23" r="3.5"></circle>
+                <circle id="Oval" stroke="#FFFCF7" fill="#000000" cx="32" cy="23" r="3.5"></circle>
+                <path d="M21,33 C22.5081568,31 24.3414901,30 26.5,30 C28.6585099,30 30.4918432,31 32,33" id="Path-4" stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+        </g>
+    </g>
+</svg>
