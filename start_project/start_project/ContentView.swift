@@ -25,16 +25,15 @@ struct ContentView: View {
                     .offset(x:-60,y:-60)
                     .padding()
                 
-                Image("calmCloudN")
+                Image("sit_smile")
                     .resizable()
                     .ignoresSafeArea()
                     .frame(width: 157.47, height:111.54)
                     .offset(x:-60,y:-60)
             }
             
-            Spacer(minLength: 5)
             
-            VStack(spacing: 20){
+            VStack{
                 Text("What Happened ?")
                 
                     .font(.custom("SFProRounded", size: 36))
@@ -42,7 +41,8 @@ struct ContentView: View {
                     .fontWeight(.bold)
                     .foregroundColor(Color.white)
                     .offset(CGSize(width: 10, height: -90))
-                
+            }
+            .padding(.bottom, 320)
                 //Spacer(minLength: -1000)
                 
                
@@ -88,20 +88,14 @@ struct ContentView: View {
                         
                     }
                 }
+                .padding(.top, 270)
                 
-                .padding()
+                .padding(90)
             }
         }
     }
     
-    struct ContentView_Previews:
-        PreviewProvider{
-        static var previews: some View {
-            ContentView()
-        }
-        
-    }
-}
+  
 
 #Preview{
     ContentView()
