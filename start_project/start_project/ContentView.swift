@@ -13,17 +13,17 @@ struct ContentView: View {
                 
                 VStack {
                     TabView(selection: $selectedTab) {
-                        EmotionView(emotion: "Sad", imageName: "sadCloud", destination: AnyView(ViewSad()))
+                        EmotionView(emotion: "Sad", imageName: "sit_sad", destination: AnyView(ViewSad()))
                             .tag(0)
 
-                        EmotionView(emotion: "Angry", imageName: "angryCloud", destination: AnyView(ViewAngry()))
+                        EmotionView(emotion: "Angry", imageName: "sit_angry", destination: AnyView(ViewAngry()))
                             .tag(1)
 
-                        EmotionView(emotion: "Anxious", imageName: "anxiousCloud", destination: AnyView(SwiftUIViewAnxious()))
+                        EmotionView(emotion: "Anxious", imageName: "sit_grumpy", destination: AnyView(SwiftUIViewAnxious()))
                             .tag(2)
 
                         // Updated destination to the new CalmView
-                        EmotionView(emotion: "Calm", imageName: "calmCloud2", destination: AnyView(CalmView()))
+                        EmotionView(emotion: "Calm", imageName: "sit_smile", destination: AnyView(CalmView()))
                             .tag(3)
                     }
                     .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
@@ -81,6 +81,9 @@ struct EmotionView: View {
     
     var body: some View {
         VStack {
+            
+            
+            
             Text("How Do You Feel!")
                 .font(.custom("SFProRounded", size: 40))
                 .fontWeight(.bold)
