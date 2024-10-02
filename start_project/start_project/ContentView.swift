@@ -4,31 +4,34 @@ struct ContentView: View {
     @State private var selectedTab = 0
     
     var body: some View {
-        ZStack {
-            // Background covering the full screen
-            Image("background1")
-                .resizable()
-                .ignoresSafeArea()
-            
-            VStack {
-                TabView(selection: $selectedTab) {
-                    EmotionView(emotion: "Sad", imageName: "sadCloud", emotionImageNames: ["", "", "", ""])
-                        .tag(0) // Sad first
-
-                    EmotionView(emotion: "Angry", imageName: "angryCloud", emotionImageNames: ["", "", "", ""])
-                        .tag(1) // Angry second
-
-                    EmotionView(emotion: "Anxious", imageName: "anxiousCloud", emotionImageNames: ["", "", "", ""])
-                        .tag(2) // Anxious third
-
-                    EmotionView(emotion: "Calm", imageName: "calmCloud2", emotionImageNames: ["", "", "", ""])
-                        .tag(3) // Calm last
-                }
-                .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
+        NavigationView {
+            ZStack {
+                // Background covering the full screen
+                Image("background1")
+                    .resizable()
+                    .ignoresSafeArea()
                 
-                // Customization of the tab bar
-                CustomTabBar(selectedTab: $selectedTab)
-                    .padding(.bottom, 10) // Adds spacing at the bottom
+                VStack {
+                    TabView(selection: $selectedTab) {
+                        EmotionView(emotion: "Sad", imageName: "sadCloud", destination: AnyView(ViewSad()))
+                            .tag(0)
+
+                        EmotionView(emotion: "Angry", imageName: "angryCloud", destination: AnyView(ViewAngry()))
+                            .tag(1)
+
+                        EmotionView(emotion: "Anxious", imageName: "anxiousCloud", destination: AnyView(SwiftUIViewAnxious()))
+                            .tag(2)
+
+                        // Updated destination to the new CalmView
+                        EmotionView(emotion: "Calm", imageName: "calmCloud2", destination: AnyView(CalmView()))
+                            .tag(3)
+                    }
+                    .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
+                    
+                    // Customization of the tab bar
+                    CustomTabBar(selectedTab: $selectedTab)
+                        .padding(.bottom, 10) // Adds spacing at the bottom
+                }
             }
         }
     }
@@ -39,10 +42,10 @@ struct CustomTabBar: View {
     
     var body: some View {
         HStack {
-            TabBarItem(imageName: "smolSad", index: 0, selectedTab: $selectedTab) // Sad first
-            TabBarItem(imageName: "smolAngry", index: 1, selectedTab: $selectedTab) // Angry second
-            TabBarItem(imageName: "smolAnx", index: 2, selectedTab: $selectedTab) // Anxious third
-            TabBarItem(imageName: "smolCalm", index: 3, selectedTab: $selectedTab) // Calm last
+            TabBarItem(imageName: "smolSad", index: 0, selectedTab: $selectedTab)
+            TabBarItem(imageName: "smolAngry", index: 1, selectedTab: $selectedTab)
+            TabBarItem(imageName: "smolAnx", index: 2, selectedTab: $selectedTab)
+            TabBarItem(imageName: "smolCalm", index: 3, selectedTab: $selectedTab)
         }
         .padding()
         .background(Color.clear)
@@ -62,7 +65,7 @@ struct TabBarItem: View {
         }) {
             Image(imageName)
                 .resizable()
-                .frame(width: 80, height: 50) // Change the size here
+                .frame(width: 80, height: 50)
                 .padding([.bottom, .trailing], 9)
                 .background(selectedTab == index ? Color.gray.opacity(0.3) : Color.clear)
                 .cornerRadius(10)
@@ -74,7 +77,7 @@ struct TabBarItem: View {
 struct EmotionView: View {
     var emotion: String
     var imageName: String
-    var emotionImageNames: [String]
+    var destination: AnyView // Use AnyView to wrap the destination
     
     var body: some View {
         VStack {
@@ -98,14 +101,13 @@ struct EmotionView: View {
             Spacer() // Pushes the button to the bottom
             
             // Next Button
-            NavigationLink(destination: DestinationView(emotion: emotion)) {
+            NavigationLink(destination: destination) {
                 Image("next")
-                   
                     .padding()
-                    .frame(maxWidth: .infinity) // Makes the button full width
+                    .frame(maxWidth: .infinity)
                     .foregroundColor(.white)
                     .cornerRadius(10)
-                    .padding(.leading, 300) // Adds horizontal padding
+                    .padding(.leading, 300)
             }
             .padding(.bottom, 50) // Adds spacing above the button
         }
@@ -125,6 +127,306 @@ struct DestinationView: View {
             Spacer()
         }
         .navigationBarTitle("Emotion Detail", displayMode: .inline)
+    }
+}
+
+// SwiftUIViewSad code here
+struct ViewSad: View {
+    var body: some View {
+        ZStack {
+            Image("background1")
+                .resizable()
+                .ignoresSafeArea()
+                .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
+            
+            VStack {
+                Text("I Feel Sad")
+                    .fontWeight(.bold)
+                    .foregroundColor(Color(red: 0.247, green: 0.294, blue: 0.498))
+                    .offset(x: -60, y: -60)
+                    .padding()
+                
+                Image("sit_sad")
+                    .resizable()
+                    .ignoresSafeArea()
+                    .frame(width: 157.47, height: 111.54)
+                    .offset(x: -60, y: -60)
+            }
+            
+            VStack {
+                Text("What Happened?")
+                    .font(.custom("SFProRounded", size: 36))
+                    .fontWeight(.bold)
+                    .foregroundColor(Color.white)
+                    .offset(CGSize(width: 10, height: -90))
+            }
+            .padding(.bottom, 320)
+            
+            VStack {
+                Button(action: {
+                    print("Relationship Button Pressed")
+                }) {
+                    Text("Relationship")
+                        .frame(maxWidth: .infinity)
+                        .padding()
+                        .background(Color.gray.opacity(0.2))
+                        .cornerRadius(10)
+                        .foregroundColor(.black)
+                        .font(.headline)
+                }
+                
+                Button(action: {
+                    print("Work Button Pressed")
+                }) {
+                    Text("Work")
+                        .frame(maxWidth: .infinity)
+                        .padding()
+                        .background(Color.gray.opacity(0.2))
+                        .cornerRadius(10)
+                        .foregroundColor(.black)
+                        .font(.headline)
+                }
+                
+                Button(action: {
+                    print("Study Button Pressed")
+                }) {
+                    Text("Study")
+                        .frame(maxWidth: .infinity)
+                        .padding()
+                        .background(Color.gray.opacity(0.2))
+                        .cornerRadius(10)
+                        .foregroundColor(.black)
+                        .font(.headline)
+                }
+            }
+            .padding(.top, 270)
+            .padding(90)
+        }
+    }
+}
+
+// SwiftUIViewAngry code here
+struct ViewAngry: View {
+    var body: some View {
+        ZStack {
+            Image("background1")
+                .resizable()
+                .ignoresSafeArea()
+                .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
+            
+            VStack {
+                Text("I Feel Angry")
+                    .fontWeight(.bold)
+                    .foregroundColor(Color(red: 0.247, green: 0.294, blue: 0.498))
+                    .offset(x: -60, y: -60)
+                    .padding()
+                
+                Image("sit_angry")
+                    .resizable()
+                    .ignoresSafeArea()
+                    .frame(width: 157.47, height: 111.54)
+                    .offset(x: -60, y: -60)
+            }
+            
+            VStack {
+                Text("What Happened?")
+                    .font(.custom("SFProRounded", size: 36))
+                    .fontWeight(.bold)
+                    .foregroundColor(Color.white)
+                    .offset(CGSize(width: 10, height: -90))
+            }
+            .padding(.bottom, 320)
+            
+            VStack {
+                Button(action: {
+                    print("Relationship Button Pressed")
+                }) {
+                    Text("Relationship")
+                        .frame(maxWidth: .infinity)
+                        .padding()
+                        .background(Color.gray.opacity(0.2))
+                        .cornerRadius(10)
+                        .foregroundColor(.black)
+                        .font(.headline)
+                }
+                
+                Button(action: {
+                    print("Work Button Pressed")
+                }) {
+                    Text("Work")
+                        .frame(maxWidth: .infinity)
+                        .padding()
+                        .background(Color.gray.opacity(0.2))
+                        .cornerRadius(10)
+                        .foregroundColor(.black)
+                        .font(.headline)
+                }
+                
+                Button(action: {
+                    print("Study Button Pressed")
+                }) {
+                    Text("Study")
+                        .frame(maxWidth: .infinity)
+                        .padding()
+                        .background(Color.gray.opacity(0.2))
+                        .cornerRadius(10)
+                        .foregroundColor(.black)
+                        .font(.headline)
+                }
+            }
+            .padding(.top, 270)
+            .padding(90)
+        }
+    }
+}
+
+// New SwiftUIViewAnxious code here
+struct SwiftUIViewAnxious: View {
+    var body: some View {
+        ZStack {
+            Image("background1")
+                .resizable()
+                .ignoresSafeArea()
+                .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
+            
+            VStack {
+                Text("I Feel Anxious")
+                    .fontWeight(.bold)
+                    .foregroundColor(Color(red: 0.247, green: 0.294, blue: 0.498))
+                    .offset(x: -60, y: -60)
+                    .padding()
+                
+                Image("sit_grumpy")
+                    .resizable()
+                    .ignoresSafeArea()
+                    .frame(width: 157.47, height: 111.54)
+                    .offset(x: -60, y: -60)
+            }
+            
+            VStack {
+                Text("What Happened?")
+                    .font(.custom("SFProRounded", size: 36))
+                    .fontWeight(.bold)
+                    .foregroundColor(Color.white)
+                    .offset(CGSize(width: 10, height: -90))
+            }
+            .padding(.bottom, 320)
+            
+            VStack {
+                Button(action: {
+                    print("Relationship Button Pressed")
+                }) {
+                    Text("Relationship")
+                        .frame(maxWidth: .infinity)
+                        .padding()
+                        .background(Color.gray.opacity(0.2))
+                        .cornerRadius(10)
+                        .foregroundColor(.black)
+                        .font(.headline)
+                }
+                
+                Button(action: {
+                    print("Work Button Pressed")
+                }) {
+                    Text("Work")
+                        .frame(maxWidth: .infinity)
+                        .padding()
+                        .background(Color.gray.opacity(0.2))
+                        .cornerRadius(10)
+                        .foregroundColor(.black)
+                        .font(.headline)
+                }
+                
+                Button(action: {
+                    print("Study Button Pressed")
+                }) {
+                    Text("Study")
+                        .frame(maxWidth: .infinity)
+                        .padding()
+                        .background(Color.gray.opacity(0.2))
+                        .cornerRadius(10)
+                        .foregroundColor(.black)
+                        .font(.headline)
+                }
+            }
+            .padding(.top, 270)
+            .padding(90)
+        }
+    }
+}
+
+// New CalmView code here
+struct CalmView: View {
+    var body: some View {
+        ZStack {
+            Image("background1")
+                .resizable()
+                .ignoresSafeArea()
+                .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
+            
+            VStack {
+                Text("I Feel Calm")
+                    .fontWeight(.bold)
+                    .foregroundColor(Color(red: 0.247, green: 0.294, blue: 0.498))
+                    .offset(x: -60, y: -60)
+                    .padding()
+                
+                Image("sit_smile")
+                    .resizable()
+                    .ignoresSafeArea()
+                    .frame(width: 157.47, height: 111.54)
+                    .offset(x: -60, y: -60)
+            }
+            
+            VStack {
+                Text("What Happened?")
+                    .font(.custom("SFProRounded", size: 36))
+                    .fontWeight(.bold)
+                    .foregroundColor(Color.white)
+                    .offset(CGSize(width: 10, height: -90))
+            }
+            .padding(.bottom, 320)
+            
+            VStack {
+                Button(action: {
+                    print("Relationship Button Pressed")
+                }) {
+                    Text("Relationship")
+                        .frame(maxWidth: .infinity)
+                        .padding()
+                        .background(Color.gray.opacity(0.2))
+                        .cornerRadius(10)
+                        .foregroundColor(.black)
+                        .font(.headline)
+                }
+                
+                Button(action: {
+                    print("Work Button Pressed")
+                }) {
+                    Text("Work")
+                        .frame(maxWidth: .infinity)
+                        .padding()
+                        .background(Color.gray.opacity(0.2))
+                        .cornerRadius(10)
+                        .foregroundColor(.black)
+                        .font(.headline)
+                }
+                
+                Button(action: {
+                    print("Study Button Pressed")
+                }) {
+                    Text("Study")
+                        .frame(maxWidth: .infinity)
+                        .padding()
+                        .background(Color.gray.opacity(0.2))
+                        .cornerRadius(10)
+                        .foregroundColor(.black)
+                        .font(.headline)
+                }
+            }
+            .padding(.top, 270)
+            .padding(90)
+        }
     }
 }
 
