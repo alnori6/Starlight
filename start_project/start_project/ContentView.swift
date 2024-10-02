@@ -115,22 +115,7 @@ struct EmotionView: View {
     }
 }
 
-struct DestinationView: View {
-    var emotion: String
-    
-    var body: some View {
-        VStack {
-            Text("You have selected \(emotion)!")
-                .font(.largeTitle)
-                .padding()
-            // Add more content or functionality here
-            Spacer()
-        }
-        .navigationBarTitle("Emotion Detail", displayMode: .inline)
-    }
-}
 
-// SwiftUIViewSad code here
 struct ViewSad: View {
     var body: some View {
         ZStack {
@@ -205,7 +190,7 @@ struct ViewSad: View {
     }
 }
 
-// SwiftUIViewAngry code here
+//  ViewAngry code here
 struct ViewAngry: View {
     var body: some View {
         ZStack {
@@ -280,7 +265,7 @@ struct ViewAngry: View {
     }
 }
 
-// New SwiftUIViewAnxious code here
+// New ViewAnxious code here
 struct SwiftUIViewAnxious: View {
     var body: some View {
         ZStack {
