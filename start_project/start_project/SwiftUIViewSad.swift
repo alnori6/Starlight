@@ -1,13 +1,13 @@
 //
-//  ContentView.swift
+//  SwiftUIViewSad.swift
 //  start_project
 //
-//  Created by Noori on 01/10/2024.
+//  Created by Maram Rabeh  on 28/03/1446 AH.
 //
 
 import SwiftUI
 
-struct ContentView: View {
+struct SwiftUIViewSad: View {
     var body: some View {
         ZStack {
             
@@ -19,19 +19,20 @@ struct ContentView: View {
             VStack{
                 
                 
-                Text("I Feel Calm")
+                Text("I Feel Sad")
                     .fontWeight(.bold)
                     .foregroundColor(Color(red: 0.24705882352941178, green: 0.29411764705882354, blue: 0.4980392156862745, opacity: 100))
                     .offset(x:-60,y:-60)
                     .padding()
                 
-                Image("sit_smile")
+                Image("sit_sad")
                     .resizable()
                     .ignoresSafeArea()
                     .frame(width: 157.47, height:111.54)
                     .offset(x:-60,y:-60)
             }
             
+          
             
             VStack{
                 Text("What Happened ?")
@@ -87,16 +88,13 @@ struct ContentView: View {
                             .font(.headline)
                         
                     }
-                }
-                .padding(.top, 270)
+                }.padding(.top,270)
                 
                 .padding(90)
             }
         }
     }
-    
-  
 
 #Preview{
-    ContentView()
+    SwiftUIViewSad()
 }

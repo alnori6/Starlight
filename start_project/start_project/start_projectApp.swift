@@ -12,6 +12,9 @@ struct start_projectApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+            SwiftUIViewAngry()
+            SwiftUIViewSad()
+            SwiftUIViewAnxious()
         }
     }
 }
