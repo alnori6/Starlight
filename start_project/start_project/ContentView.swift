@@ -304,6 +304,7 @@ struct ViewAngry: View {
             .offset(x: 140, y: 230)
             }
         }
+        // .navigationBarBackButtonHidden(true)
     }
 }
 
@@ -393,6 +394,7 @@ struct ViewAnxious: View {
             .offset(x: 140, y: 230)
             }
         }
+        // .navigationBarBackButtonHidden(true)
     }
 }
 
@@ -482,6 +484,7 @@ struct CalmView: View {
             .offset(x: 140, y: 230)
             }
         }
+        // .navigationBarBackButtonHidden(true)
     }
 }
 
