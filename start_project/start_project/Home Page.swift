@@ -38,7 +38,12 @@ struct Home_Page: View {
                         Text(" To be yourself a world that is constantly trying to make you something else is the greatest accomplishment ")
                             .foregroundColor(Color(red: 1.0, green: 0.9882352941176471, blue: 0.9686274509803922))
                             .multilineTextAlignment(.center)
-                            .offset(x: 30, y: 40)
+                            .offset(x: 30, y: 0)
+                            .frame(width: 333, height: 299)
+                        Text(" Ralph Waldo Emerson")
+                            .foregroundColor(Color(red: 0.24705882352941178, green: 0.29411764705882354, blue: 0.4980392156862745))
+                            .multilineTextAlignment(.center)
+                            .offset(x: 30, y:90)
                             .frame(width: 333, height: 299)
                     }
                     
@@ -52,23 +57,38 @@ struct Home_Page: View {
                         Text(" To be yourself a world that is constantly trying to make you something else is the greatest accomplishment ")
                             .foregroundColor(Color(red: 1.0, green: 0.9882352941176471, blue: 0.9686274509803922))
                             .multilineTextAlignment(.center)
-                            .offset(x: 0, y: 40)
+                            .offset(x: 0, y: 0)
                             .frame(width: 333, height: 299)
                         
                         Text(" Ralph Waldo Emerson")
                             .foregroundColor(Color(red: 0.24705882352941178, green: 0.29411764705882354, blue: 0.4980392156862745))
                             .multilineTextAlignment(.center)
-                            .offset(x: 0, y: 120)
+                            .offset(x: 0, y: 90)
                             .frame(width: 333, height: 299)
-                        
                     }
                     
-                    RoundedRectangle(cornerRadius: 23)
-                        .frame(width: 333, height: 299)
-                        .offset(x: -30, y: 40)
-                        .foregroundColor(/*@START_MENU_TOKEN@*/Color(red: 0.6588235294117647, green: 0.5764705882352941, blue: 0.7254901960784313)/*@END_MENU_TOKEN@*/)
-                        .padding()
+                    ZStack{
+                        
+                        RoundedRectangle(cornerRadius: 23)
+                            .frame(width: 333, height: 299)
+                            .offset(x: -30, y: 40)
+                            .foregroundColor(/*@START_MENU_TOKEN@*/Color(red: 0.6588235294117647, green: 0.5764705882352941, blue: 0.7254901960784313)/*@END_MENU_TOKEN@*/)
+                            .padding()
+                        Text(" To be yourself a world that is constantly trying to make you something else is the greatest accomplishment ")
+                            .foregroundColor(Color(red: 1.0, green: 0.9882352941176471, blue: 0.9686274509803922))
+                            .multilineTextAlignment(.center)
+                            .offset(x: -30, y: 0)
+                            .frame(width: 333, height: 299)
+                        Text(" Ralph Waldo Emerson")
+                            .foregroundColor(Color(red: 0.24705882352941178, green: 0.29411764705882354, blue: 0.4980392156862745))
+                            .multilineTextAlignment(.center)
+                            .offset(x: -30, y: 90)
+                            .frame(width: 333, height: 299)
+                    }
+                    
+                    
                    }
+                
                 HStack{
                     
                     Circle()
@@ -127,47 +147,47 @@ struct Home_Page: View {
                 }
                 
                 
-                HStack{
-                    
-                    ZStack{
-                        RoundedRectangle(cornerRadius: 7)
-                            .frame(width: 50, height: 50)
-                            .offset(x: 30, y: -15)
-                            .foregroundColor(/*@START_MENU_TOKEN@*/Color(red: 0.24705882352941178, green: 0.29411764705882354, blue: 0.4980392156862745)/*@END_MENU_TOKEN@*/)
-                            .padding()
-                        
-                        Image("podcastImage")
-                            .offset(x: 30, y: -15)
-                        
-                    }
-                    
-                    ZStack{
-                        RoundedRectangle(cornerRadius: 7)
-                            .frame(width: 50, height: 50)
-                            .offset(x: 0, y: -15)
-                            .foregroundColor(/*@START_MENU_TOKEN@*/Color(red: 0.24705882352941178, green: 0.29411764705882354, blue: 0.4980392156862745)/*@END_MENU_TOKEN@*/)
-                            .padding()
-                        
-                        Image("youtubeImage")
-                            .offset(x: 0, y: -15)
-                        
-                    }
-                    
-                    ZStack{
-                        RoundedRectangle(cornerRadius: 7)
-                            .frame(width: 50, height: 50)
-                            .offset(x: -30, y: -15)
-                            .foregroundColor(/*@START_MENU_TOKEN@*/Color(red: 0.24705882352941178, green: 0.29411764705882354, blue: 0.4980392156862745)/*@END_MENU_TOKEN@*/)
-                            .padding()
-                        
-                        Image("safariImage")
-                            .offset(x: -30, y: -15)
-                        
-                    }
-                    
-                    
-                    
-                }
+//                HStack{
+//                    
+//                    ZStack{
+//                        RoundedRectangle(cornerRadius: 7)
+//                            .frame(width: 50, height: 50)
+//                            .offset(x: 30, y: -15)
+//                            .foregroundColor(/*@START_MENU_TOKEN@*/Color(red: 0.24705882352941178, green: 0.29411764705882354, blue: 0.4980392156862745)/*@END_MENU_TOKEN@*/)
+//                            .padding()
+//                        
+//                        Image("podcastImage")
+//                            .offset(x: 30, y: -15)
+//                        
+//                    }
+//                    
+//                    ZStack{
+//                        RoundedRectangle(cornerRadius: 7)
+//                            .frame(width: 50, height: 50)
+//                            .offset(x: 0, y: -15)
+//                            .foregroundColor(/*@START_MENU_TOKEN@*/Color(red: 0.24705882352941178, green: 0.29411764705882354, blue: 0.4980392156862745)/*@END_MENU_TOKEN@*/)
+//                            .padding()
+//                        
+//                        Image("youtubeImage")
+//                            .offset(x: 0, y: -15)
+//                        
+//                    }
+//                    
+//                    ZStack{
+//                        RoundedRectangle(cornerRadius: 7)
+//                            .frame(width: 50, height: 50)
+//                            .offset(x: -30, y: -15)
+//                            .foregroundColor(/*@START_MENU_TOKEN@*/Color(red: 0.24705882352941178, green: 0.29411764705882354, blue: 0.4980392156862745)/*@END_MENU_TOKEN@*/)
+//                            .padding()
+//                        
+//                        Image("safariImage")
+//                            .offset(x: -30, y: -15)
+//                        
+//                    }
+//                    
+//                    
+//                    
+//                }
                 
 }
 }
