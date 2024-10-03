@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		293A63D72CABF124002B95C1 /* SF-Pro-Rounded-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 293A63D62CABF124002B95C1 /* SF-Pro-Rounded-Regular.ttf */; };
+		29E05F032CAD1EFD00B84C83 /* Emotin 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E05F022CAD1EFD00B84C83 /* Emotin 2.swift */; };
+		29E05F072CAD1F3B00B84C83 /* Emotion 3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E05F062CAD1F3B00B84C83 /* Emotion 3.swift */; };
+		29E05F092CAD1F5100B84C83 /* Emotion 4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E05F082CAD1F5100B84C83 /* Emotion 4.swift */; };
+		29E05F122CAD4C6C00B84C83 /* Home Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E05F112CAD4C6C00B84C83 /* Home Page.swift */; };
 		FCE9BC442CABE65E005CA396 /* start_projectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE9BC432CABE65E005CA396 /* start_projectApp.swift */; };
 		FCE9BC462CABE65E005CA396 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE9BC452CABE65E005CA396 /* ContentView.swift */; };
 		FCE9BC482CABE660005CA396 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCE9BC472CABE660005CA396 /* Assets.xcassets */; };
@@ -36,6 +40,11 @@
 
 /* Begin PBXFileReference section */
 		293A63D62CABF124002B95C1 /* SF-Pro-Rounded-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Rounded-Regular.ttf"; path = "../../../../Downloads/SF-Pro-Rounded-Regular.ttf"; sourceTree = "<group>"; };
+		29E05F022CAD1EFD00B84C83 /* Emotin 2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Emotin 2.swift"; sourceTree = "<group>"; };
+		29E05F062CAD1F3B00B84C83 /* Emotion 3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Emotion 3.swift"; sourceTree = "<group>"; };
+		29E05F082CAD1F5100B84C83 /* Emotion 4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Emotion 4.swift"; sourceTree = "<group>"; };
+		29E05F0D2CAD299B00B84C83 /* start-project-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "start-project-Info.plist"; sourceTree = SOURCE_ROOT; };
+		29E05F112CAD4C6C00B84C83 /* Home Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home Page.swift"; sourceTree = "<group>"; };
 		FCE9BC402CABE65E005CA396 /* start_project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = start_project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCE9BC432CABE65E005CA396 /* start_projectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = start_projectApp.swift; sourceTree = "<group>"; };
 		FCE9BC452CABE65E005CA396 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -96,8 +105,13 @@
 		FCE9BC422CABE65E005CA396 /* start_project */ = {
 			isa = PBXGroup;
 			children = (
+				29E05F0D2CAD299B00B84C83 /* start-project-Info.plist */,
 				FCE9BC432CABE65E005CA396 /* start_projectApp.swift */,
 				FCE9BC452CABE65E005CA396 /* ContentView.swift */,
+				29E05F022CAD1EFD00B84C83 /* Emotin 2.swift */,
+				29E05F062CAD1F3B00B84C83 /* Emotion 3.swift */,
+				29E05F082CAD1F5100B84C83 /* Emotion 4.swift */,
+				29E05F112CAD4C6C00B84C83 /* Home Page.swift */,
 				FCE9BC472CABE660005CA396 /* Assets.xcassets */,
 				FCE9BC492CABE660005CA396 /* Preview Content */,
 			);
@@ -261,8 +275,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29E05F072CAD1F3B00B84C83 /* Emotion 3.swift in Sources */,
+				29E05F032CAD1EFD00B84C83 /* Emotin 2.swift in Sources */,
+				29E05F122CAD4C6C00B84C83 /* Home Page.swift in Sources */,
 				FCE9BC462CABE65E005CA396 /* ContentView.swift in Sources */,
 				FCE9BC442CABE65E005CA396 /* start_projectApp.swift in Sources */,
+				29E05F092CAD1F5100B84C83 /* Emotion 4.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +446,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"start_project/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "start-project-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -456,6 +475,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"start_project/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "start-project-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
