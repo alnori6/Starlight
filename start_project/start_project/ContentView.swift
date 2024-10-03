@@ -10,6 +10,7 @@ struct ContentView: View {
                 Image("background1")
                     .resizable()
                     .ignoresSafeArea()
+                    .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
                 
                 VStack {
                     TabView(selection: $selectedTab) {
@@ -19,7 +20,7 @@ struct ContentView: View {
                         EmotionView(emotion: "Angry", imageName: "sit_angry", destination: AnyView(ViewAngry()))
                             .tag(1)
 
-                        EmotionView(emotion: "Anxious", imageName: "sit_grumpy", destination: AnyView(SwiftUIViewAnxious()))
+                        EmotionView(emotion: "Anxious", imageName: "sit_grumpy", destination: AnyView(ViewAnxious()))
                             .tag(2)
 
                         // Updated destination to the new CalmView
@@ -47,7 +48,7 @@ struct CustomTabBar: View {
             TabBarItem(imageName: "smolAnx", index: 2, selectedTab: $selectedTab)
             TabBarItem(imageName: "smolCalm", index: 3, selectedTab: $selectedTab)
         }
-        .padding()
+        .padding(.bottom, 100.0)
         .background(Color.clear)
         .cornerRadius(10)
         .shadow(color: Color.gray.opacity(0.5), radius: 5, x: 0, y: 5)
@@ -120,12 +121,15 @@ struct EmotionView: View {
 
 
 struct ViewSad: View {
+    @Environment(\.presentationMode) var presentationMode
     var body: some View {
         ZStack {
             Image("background1")
                 .resizable()
                 .ignoresSafeArea()
                 .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
+         
+    
             
             VStack {
                 Text("I Feel Sad")
@@ -186,15 +190,37 @@ struct ViewSad: View {
                         .foregroundColor(.black)
                         .font(.headline)
                 }
+              
+                
             }
             .padding(.top, 270)
             .padding(90)
+            
+            Button(action: {
+            presentationMode.wrappedValue.dismiss()
+            }) {
+            Image("back")
+            .resizable()
+            .frame(width: 18.5, height: 17)
+            .foregroundColor(.white)
+            .padding()
+            .background(Color.clear)
+            .cornerRadius(10)
+            .offset(x: 140, y: 230)
+            }
+            .padding(.top, 40) // Adjust vertical position
+            .padding(.leading, 20) // Adjust horizontal position
+            
+            
+            
         }
+   // .navigationBarBackButtonHidden(true)
     }
 }
 
 //  ViewAngry code here
 struct ViewAngry: View {
+    @Environment(\.presentationMode) var presentationMode
     var body: some View {
         ZStack {
             Image("background1")
@@ -264,12 +290,26 @@ struct ViewAngry: View {
             }
             .padding(.top, 270)
             .padding(90)
+            
+            Button(action: {
+            presentationMode.wrappedValue.dismiss()
+            }) {
+            Image("back")
+            .resizable()
+            .frame(width: 18.5, height: 17)
+            .foregroundColor(.white)
+            .padding()
+            .background(Color.clear)
+            .cornerRadius(10)
+            .offset(x: 140, y: 230)
+            }
         }
     }
 }
 
 // New ViewAnxious code here
-struct SwiftUIViewAnxious: View {
+struct ViewAnxious: View {
+    @Environment(\.presentationMode) var presentationMode
     var body: some View {
         ZStack {
             Image("background1")
@@ -339,12 +379,26 @@ struct SwiftUIViewAnxious: View {
             }
             .padding(.top, 270)
             .padding(90)
+            
+            Button(action: {
+            presentationMode.wrappedValue.dismiss()
+            }) {
+            Image("back")
+            .resizable()
+            .frame(width: 18.5, height: 17)
+            .foregroundColor(.white)
+            .padding()
+            .background(Color.clear)
+            .cornerRadius(10)
+            .offset(x: 140, y: 230)
+            }
         }
     }
 }
 
 // New CalmView code here
 struct CalmView: View {
+    @Environment(\.presentationMode) var presentationMode
     var body: some View {
         ZStack {
             Image("background1")
@@ -414,6 +468,19 @@ struct CalmView: View {
             }
             .padding(.top, 270)
             .padding(90)
+            
+            Button(action: {
+            presentationMode.wrappedValue.dismiss()
+            }) {
+            Image("back")
+            .resizable()
+            .frame(width: 18.5, height: 17)
+            .foregroundColor(.white)
+            .padding()
+            .background(Color.clear)
+            .cornerRadius(10)
+            .offset(x: 140, y: 230)
+            }
         }
     }
 }
