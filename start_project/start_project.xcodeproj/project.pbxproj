@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC0168D72CAE7F8000B57BEC /* GIFImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0168D62CAE7F8000B57BEC /* GIFImage.swift */; };
+		FC0168D92CAE80B200B57BEC /* animation.gif in Resources */ = {isa = PBXBuildFile; fileRef = FC0168D82CAE80B200B57BEC /* animation.gif */; };
+		FC81725C2CAF29710027B536 /* splash_page.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC81725B2CAF29710027B536 /* splash_page.swift */; };
 		FCE9BC442CABE65E005CA396 /* start_projectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE9BC432CABE65E005CA396 /* start_projectApp.swift */; };
-		FCE9BC462CABE65E005CA396 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE9BC452CABE65E005CA396 /* ContentView.swift */; };
 		FCE9BC482CABE660005CA396 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCE9BC472CABE660005CA396 /* Assets.xcassets */; };
 		FCE9BC4B2CABE660005CA396 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCE9BC4A2CABE660005CA396 /* Preview Assets.xcassets */; };
 		FCE9BC552CABE660005CA396 /* start_projectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE9BC542CABE660005CA396 /* start_projectTests.swift */; };
@@ -34,9 +36,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FC0168D62CAE7F8000B57BEC /* GIFImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFImage.swift; sourceTree = "<group>"; };
+		FC0168D82CAE80B200B57BEC /* animation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = animation.gif; sourceTree = "<group>"; };
+		FC81725B2CAF29710027B536 /* splash_page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = splash_page.swift; sourceTree = "<group>"; };
 		FCE9BC402CABE65E005CA396 /* start_project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = start_project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCE9BC432CABE65E005CA396 /* start_projectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = start_projectApp.swift; sourceTree = "<group>"; };
-		FCE9BC452CABE65E005CA396 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FCE9BC472CABE660005CA396 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FCE9BC4A2CABE660005CA396 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FCE9BC502CABE660005CA396 /* start_projectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = start_projectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,7 +99,9 @@
 			isa = PBXGroup;
 			children = (
 				FCE9BC432CABE65E005CA396 /* start_projectApp.swift */,
-				FCE9BC452CABE65E005CA396 /* ContentView.swift */,
+				FC81725B2CAF29710027B536 /* splash_page.swift */,
+				FC0168D62CAE7F8000B57BEC /* GIFImage.swift */,
+				FC0168D82CAE80B200B57BEC /* animation.gif */,
 				FCE9BC472CABE660005CA396 /* Assets.xcassets */,
 				FCE9BC492CABE660005CA396 /* Preview Content */,
 			);
@@ -231,6 +237,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC0168D92CAE80B200B57BEC /* animation.gif in Resources */,
 				FCE9BC4B2CABE660005CA396 /* Preview Assets.xcassets in Resources */,
 				FCE9BC482CABE660005CA396 /* Assets.xcassets in Resources */,
 			);
@@ -257,8 +264,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCE9BC462CABE65E005CA396 /* ContentView.swift in Sources */,
+				FC0168D72CAE7F8000B57BEC /* GIFImage.swift in Sources */,
 				FCE9BC442CABE65E005CA396 /* start_projectApp.swift in Sources */,
+				FC81725C2CAF29710027B536 /* splash_page.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
