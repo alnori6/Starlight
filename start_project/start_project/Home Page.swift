@@ -8,14 +8,6 @@
 import SwiftUI
 
 struct Home_Page: View {
-    var body: some View {
-        
-        ZStack{
-           
-            Image("Home page")
-               .resizable()
-                .ignoresSafeArea()
-
 var body: some View {
     
     ZStack{
