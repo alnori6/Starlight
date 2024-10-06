@@ -13,7 +13,7 @@ struct Home_Page: View {
         ZStack{
            
             Image("Home page")
-//                .resizable()
+               .resizable()
                 .ignoresSafeArea()
 
             
