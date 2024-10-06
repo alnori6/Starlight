@@ -13,9 +13,18 @@ struct ContentView: View {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
-            Text("Hello, world!")
+            
+            Text("Wejdan Views")
         }
         .padding()
+    }
+    
+    init() {
+    for familyName in UIFont.familyNames {
+    print(familyName)
+    for fontName in UIFont.fontNames(forFamilyName: familyName){
+    print("-- (fontName)")}
+    }
     }
 }
 

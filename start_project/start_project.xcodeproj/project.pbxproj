@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B134D8D92CB26722003FB8EA /* calmFeeling.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B134D8D82CB26722003FB8EA /* calmFeeling.mp3 */; };
+		B134D8DB2CB26732003FB8EA /* sadFeeling.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B134D8DA2CB26732003FB8EA /* sadFeeling.mp3 */; };
+		B134D8DE2CB26883003FB8EA /* anxietyFeeling.MP4 in Resources */ = {isa = PBXBuildFile; fileRef = B134D8DD2CB26883003FB8EA /* anxietyFeeling.MP4 */; };
+		B134D8E02CB269A4003FB8EA /* CalmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B134D8DF2CB269A4003FB8EA /* CalmView.swift */; };
+		B134D8E22CB26A84003FB8EA /* CalmPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B134D8E12CB26A84003FB8EA /* CalmPlayerView.swift */; };
+		B134D8E42CB26B1B003FB8EA /* PlaybackButtonControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B134D8E32CB26B1B003FB8EA /* PlaybackButtonControl.swift */; };
+		B134D8E62CB26B79003FB8EA /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B134D8E52CB26B79003FB8EA /* AudioManager.swift */; };
+		B134D8E82CB26BB1003FB8EA /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B134D8E72CB26BB1003FB8EA /* Extentions.swift */; };
+		B134D8EA2CB26C66003FB8EA /* SadPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B134D8E92CB26C66003FB8EA /* SadPlayerView.swift */; };
+		B134D8EC2CB26E87003FB8EA /* SadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B134D8EB2CB26E87003FB8EA /* SadView.swift */; };
+		B134D8EE2CB2707D003FB8EA /* AngerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B134D8ED2CB2707D003FB8EA /* AngerView.swift */; };
+		B134D8F02CB270D2003FB8EA /* AngerVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B134D8EF2CB270D2003FB8EA /* AngerVideoView.swift */; };
+		B134D8F22CB275C3003FB8EA /* angerFeeling.MP4 in Resources */ = {isa = PBXBuildFile; fileRef = B134D8F12CB275C3003FB8EA /* angerFeeling.MP4 */; };
+		B134D8F42CB27625003FB8EA /* AnxietyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B134D8F32CB27625003FB8EA /* AnxietyView.swift */; };
+		B134D8F62CB27674003FB8EA /* AnxietyVidoeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B134D8F52CB27674003FB8EA /* AnxietyVidoeView.swift */; };
 		FCE9BC442CABE65E005CA396 /* start_projectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE9BC432CABE65E005CA396 /* start_projectApp.swift */; };
 		FCE9BC462CABE65E005CA396 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE9BC452CABE65E005CA396 /* ContentView.swift */; };
 		FCE9BC482CABE660005CA396 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCE9BC472CABE660005CA396 /* Assets.xcassets */; };
@@ -34,6 +49,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B134D8D82CB26722003FB8EA /* calmFeeling.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = calmFeeling.mp3; sourceTree = "<group>"; };
+		B134D8DA2CB26732003FB8EA /* sadFeeling.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sadFeeling.mp3; sourceTree = "<group>"; };
+		B134D8DD2CB26883003FB8EA /* anxietyFeeling.MP4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = anxietyFeeling.MP4; sourceTree = "<group>"; };
+		B134D8DF2CB269A4003FB8EA /* CalmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalmView.swift; sourceTree = "<group>"; };
+		B134D8E12CB26A84003FB8EA /* CalmPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalmPlayerView.swift; sourceTree = "<group>"; };
+		B134D8E32CB26B1B003FB8EA /* PlaybackButtonControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackButtonControl.swift; sourceTree = "<group>"; };
+		B134D8E52CB26B79003FB8EA /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		B134D8E72CB26BB1003FB8EA /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
+		B134D8E92CB26C66003FB8EA /* SadPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SadPlayerView.swift; sourceTree = "<group>"; };
+		B134D8EB2CB26E87003FB8EA /* SadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SadView.swift; sourceTree = "<group>"; };
+		B134D8ED2CB2707D003FB8EA /* AngerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AngerView.swift; sourceTree = "<group>"; };
+		B134D8EF2CB270D2003FB8EA /* AngerVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AngerVideoView.swift; sourceTree = "<group>"; };
+		B134D8F12CB275C3003FB8EA /* angerFeeling.MP4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = angerFeeling.MP4; sourceTree = "<group>"; };
+		B134D8F32CB27625003FB8EA /* AnxietyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnxietyView.swift; sourceTree = "<group>"; };
+		B134D8F52CB27674003FB8EA /* AnxietyVidoeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnxietyVidoeView.swift; sourceTree = "<group>"; };
 		FCE9BC402CABE65E005CA396 /* start_project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = start_project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCE9BC432CABE65E005CA396 /* start_projectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = start_projectApp.swift; sourceTree = "<group>"; };
 		FCE9BC452CABE65E005CA396 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -96,7 +126,22 @@
 			children = (
 				FCE9BC432CABE65E005CA396 /* start_projectApp.swift */,
 				FCE9BC452CABE65E005CA396 /* ContentView.swift */,
+				B134D8DF2CB269A4003FB8EA /* CalmView.swift */,
+				B134D8E12CB26A84003FB8EA /* CalmPlayerView.swift */,
+				B134D8ED2CB2707D003FB8EA /* AngerView.swift */,
+				B134D8EF2CB270D2003FB8EA /* AngerVideoView.swift */,
+				B134D8F32CB27625003FB8EA /* AnxietyView.swift */,
+				B134D8F52CB27674003FB8EA /* AnxietyVidoeView.swift */,
+				B134D8EB2CB26E87003FB8EA /* SadView.swift */,
+				B134D8E92CB26C66003FB8EA /* SadPlayerView.swift */,
+				B134D8E32CB26B1B003FB8EA /* PlaybackButtonControl.swift */,
+				B134D8E52CB26B79003FB8EA /* AudioManager.swift */,
+				B134D8E72CB26BB1003FB8EA /* Extentions.swift */,
 				FCE9BC472CABE660005CA396 /* Assets.xcassets */,
+				B134D8F12CB275C3003FB8EA /* angerFeeling.MP4 */,
+				B134D8DD2CB26883003FB8EA /* anxietyFeeling.MP4 */,
+				B134D8D82CB26722003FB8EA /* calmFeeling.mp3 */,
+				B134D8DA2CB26732003FB8EA /* sadFeeling.mp3 */,
 				FCE9BC492CABE660005CA396 /* Preview Content */,
 			);
 			path = start_project;
@@ -231,8 +276,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B134D8F22CB275C3003FB8EA /* angerFeeling.MP4 in Resources */,
 				FCE9BC4B2CABE660005CA396 /* Preview Assets.xcassets in Resources */,
 				FCE9BC482CABE660005CA396 /* Assets.xcassets in Resources */,
+				B134D8DB2CB26732003FB8EA /* sadFeeling.mp3 in Resources */,
+				B134D8DE2CB26883003FB8EA /* anxietyFeeling.MP4 in Resources */,
+				B134D8D92CB26722003FB8EA /* calmFeeling.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +306,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B134D8F62CB27674003FB8EA /* AnxietyVidoeView.swift in Sources */,
+				B134D8EC2CB26E87003FB8EA /* SadView.swift in Sources */,
+				B134D8F42CB27625003FB8EA /* AnxietyView.swift in Sources */,
+				B134D8F02CB270D2003FB8EA /* AngerVideoView.swift in Sources */,
+				B134D8E62CB26B79003FB8EA /* AudioManager.swift in Sources */,
+				B134D8E22CB26A84003FB8EA /* CalmPlayerView.swift in Sources */,
 				FCE9BC462CABE65E005CA396 /* ContentView.swift in Sources */,
+				B134D8E42CB26B1B003FB8EA /* PlaybackButtonControl.swift in Sources */,
 				FCE9BC442CABE65E005CA396 /* start_projectApp.swift in Sources */,
+				B134D8EE2CB2707D003FB8EA /* AngerView.swift in Sources */,
+				B134D8E02CB269A4003FB8EA /* CalmView.swift in Sources */,
+				B134D8EA2CB26C66003FB8EA /* SadPlayerView.swift in Sources */,
+				B134D8E82CB26BB1003FB8EA /* Extentions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

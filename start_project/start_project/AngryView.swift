@@ -1,19 +1,19 @@
 //
-//  CalmView.swift
+//  AngryView.swift
 //  start_project
 //
-//  Created by Wejdan Alghamdi on 03/04/1446 AH.
+//  Created by Wejdan Alghamdi on 30/03/1446 AH.
 //
 
 import SwiftUI
 
-struct CalmView: View {
+struct AngryView: View {
     
-    // @StateObject var calmVM: CalmViewModel
-     @State private var showPlayer = false
+    @State private var showVideoPlayer = false
     
     var body: some View {
-        ZStack {
+        
+        ZStack{
             
             Image("background2")
                 .resizable()
@@ -23,7 +23,7 @@ struct CalmView: View {
             
             VStack{
                 
-                Text("Calm")
+                Text("Angry")
                     .font(Font.custom("SFProRounded-Bold", size: 40))
                     .font(.title)
                     .foregroundColor(Color.white)
@@ -33,24 +33,24 @@ struct CalmView: View {
             .padding(.top, 122.0)
             
             VStack(spacing: 50){
-                Text("Here is a segment of podcast with related insight")
+                Text("This Video might also help you gain a deeper understanding")
                     .font(Font.custom("SFProRounded-Bold", size: 16))
                     .foregroundColor(Color(red: 0.24705882352941178, green: 0.29411764705882354, blue: 0.4980392156862745))
+                    .multilineTextAlignment(.center)
                 
 //                    NavigationLink(destination: PlayerView()){
-                    Button(action:{showPlayer = true}) {Image("podcastimage_1").resizable().frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: 65)
+                    Button(action:{showVideoPlayer = true}) {Image("youtubimage_1").resizable().frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: 65)
                     }
                     
                 }
             .ignoresSafeArea()
-           // .fullScreenCover(isPresented: $showPlayer){
-             //   PlayerView(sadVM: sadVM)
-           // }
+            .fullScreenCover(isPresented: $showVideoPlayer){
+                VideoPlayerView()
+            }
         }
     }
 }
 
 #Preview {
-    CalmView()
-        .environmentObject(AudioManager())
+    AngryView()
 }
