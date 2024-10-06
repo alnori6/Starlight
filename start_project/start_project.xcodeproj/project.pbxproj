@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		293A63D72CABF124002B95C1 /* SF-Pro-Rounded-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 293A63D62CABF124002B95C1 /* SF-Pro-Rounded-Regular.ttf */; };
 		29E05F032CAD1EFD00B84C83 /* Emotin 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E05F022CAD1EFD00B84C83 /* Emotin 2.swift */; };
 		29E05F072CAD1F3B00B84C83 /* Emotion 3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E05F062CAD1F3B00B84C83 /* Emotion 3.swift */; };
 		29E05F092CAD1F5100B84C83 /* Emotion 4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E05F082CAD1F5100B84C83 /* Emotion 4.swift */; };
@@ -39,7 +38,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		293A63D62CABF124002B95C1 /* SF-Pro-Rounded-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Rounded-Regular.ttf"; path = "../../../../Downloads/SF-Pro-Rounded-Regular.ttf"; sourceTree = "<group>"; };
 		29E05F022CAD1EFD00B84C83 /* Emotin 2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Emotin 2.swift"; sourceTree = "<group>"; };
 		29E05F062CAD1F3B00B84C83 /* Emotion 3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Emotion 3.swift"; sourceTree = "<group>"; };
 		29E05F082CAD1F5100B84C83 /* Emotion 4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Emotion 4.swift"; sourceTree = "<group>"; };
@@ -139,7 +137,6 @@
 			children = (
 				FCE9BC5E2CABE660005CA396 /* start_projectUITests.swift */,
 				FCE9BC602CABE660005CA396 /* start_projectUITestsLaunchTests.swift */,
-				293A63D62CABF124002B95C1 /* SF-Pro-Rounded-Regular.ttf */,
 			);
 			path = start_projectUITests;
 			sourceTree = "<group>";
@@ -248,7 +245,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				293A63D72CABF124002B95C1 /* SF-Pro-Rounded-Regular.ttf in Resources */,
 				FCE9BC4B2CABE660005CA396 /* Preview Assets.xcassets in Resources */,
 				FCE9BC482CABE660005CA396 /* Assets.xcassets in Resources */,
 			);
