@@ -1,49 +1,5 @@
 import SwiftUI
 
-extension Color {
-    static let CustomColor = Color(red: 63 / 255, green: 75 / 255, blue: 127 / 255)
-}
-
-struct SplashPage: View {
-    @State private var isActive = false
-    
-    var body: some View {
-        if isActive {
-            ContentView() // Navigate to ContentView after splash
-        } else {
-            GeometryReader { geometry in
-                ZStack {
-                    Image("background1")
-                        .resizable()
-                        .scaledToFill()
-                        .edgesIgnoringSafeArea(.all)
-                    
-                    GIFImage(name: "animation")
-                        .frame(width: 200, height: 200)
-                        .edgesIgnoringSafeArea(.all)
-                        .offset(x: 0, y: 850)
-                        .scaleEffect(CGSize(width: 0.06, height: 0.06))
-                    
-                    Text("Grasp your Feelings, Heighten your Awareness")
-                        .font(.largeTitle)
-                        .foregroundColor(.customColor)
-                        .offset(x: 0, y: -85)
-                        .font(Font.custom("SFProRounded-Bold", size: 16))
-                        .fontWeight(.semibold)
-                }
-                .onAppear {
-                    // Navigate to ContentView after 3 seconds
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-                        withAnimation {
-                            isActive = true
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
 struct ContentView: View {
     @State private var selectedTab = 0
     
@@ -157,5 +113,5 @@ struct EmotionView: View {
 }
 
 #Preview {
-    SplashPage()
+    ContentView()
 }
