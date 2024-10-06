@@ -13,6 +13,11 @@ struct start_projectApp: App {
         WindowGroup {
             ContentView()
             ViewSad()
+            CalmView()
+            ViewAngry()
+            ViewAnxious()
+            splash_page()
+            GIFImage(name: "animation")
         }
     }
 }
