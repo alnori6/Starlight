@@ -15,8 +15,12 @@
 		EC275E092CB270D300DD3507 /* ViewAngry.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC275E082CB270D300DD3507 /* ViewAngry.swift */; };
 		EC275E0B2CB2714400DD3507 /* ViewAnxious.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC275E0A2CB2714400DD3507 /* ViewAnxious.swift */; };
 		EC275E0D2CB271AC00DD3507 /* CalmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC275E0C2CB271AC00DD3507 /* CalmView.swift */; };
+		EC275E172CB3DA3000DD3507 /* Emotion_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC275E162CB3DA3000DD3507 /* Emotion_1.swift */; };
+		EC275E192CB3DA8300DD3507 /* Emotion_3.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC275E182CB3DA8300DD3507 /* Emotion_3.swift */; };
+		EC275E1B2CB3DACC00DD3507 /* Emotin_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC275E1A2CB3DACC00DD3507 /* Emotin_2.swift */; };
+		EC275E1D2CB3DAFA00DD3507 /* Emotion_4.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC275E1C2CB3DAFA00DD3507 /* Emotion_4.swift */; };
 		FCE9BC442CABE65E005CA396 /* start_projectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE9BC432CABE65E005CA396 /* start_projectApp.swift */; };
-		FCE9BC462CABE65E005CA396 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE9BC452CABE65E005CA396 /* ContentView.swift */; };
+		FCE9BC462CABE65E005CA396 /* ContentOhoud.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE9BC452CABE65E005CA396 /* ContentOhoud.swift */; };
 		FCE9BC482CABE660005CA396 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCE9BC472CABE660005CA396 /* Assets.xcassets */; };
 		FCE9BC4B2CABE660005CA396 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCE9BC4A2CABE660005CA396 /* Preview Assets.xcassets */; };
 		FCE9BC552CABE660005CA396 /* start_projectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE9BC542CABE660005CA396 /* start_projectTests.swift */; };
@@ -50,9 +54,13 @@
 		EC275E082CB270D300DD3507 /* ViewAngry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewAngry.swift; sourceTree = "<group>"; };
 		EC275E0A2CB2714400DD3507 /* ViewAnxious.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewAnxious.swift; sourceTree = "<group>"; };
 		EC275E0C2CB271AC00DD3507 /* CalmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalmView.swift; sourceTree = "<group>"; };
+		EC275E162CB3DA3000DD3507 /* Emotion_1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emotion_1.swift; sourceTree = "<group>"; };
+		EC275E182CB3DA8300DD3507 /* Emotion_3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emotion_3.swift; sourceTree = "<group>"; };
+		EC275E1A2CB3DACC00DD3507 /* Emotin_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emotin_2.swift; sourceTree = "<group>"; };
+		EC275E1C2CB3DAFA00DD3507 /* Emotion_4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emotion_4.swift; sourceTree = "<group>"; };
 		FCE9BC402CABE65E005CA396 /* start_project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = start_project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCE9BC432CABE65E005CA396 /* start_projectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = start_projectApp.swift; sourceTree = "<group>"; };
-		FCE9BC452CABE65E005CA396 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FCE9BC452CABE65E005CA396 /* ContentOhoud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentOhoud.swift; sourceTree = "<group>"; };
 		FCE9BC472CABE660005CA396 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FCE9BC4A2CABE660005CA396 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FCE9BC502CABE660005CA396 /* start_projectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = start_projectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,9 +119,13 @@
 			isa = PBXGroup;
 			children = (
 				FCE9BC432CABE65E005CA396 /* start_projectApp.swift */,
-				FCE9BC452CABE65E005CA396 /* ContentView.swift */,
+				FCE9BC452CABE65E005CA396 /* ContentOhoud.swift */,
 				EC275E002CAD332B00DD3507 /* ViewSad.swift */,
 				EC275E0C2CB271AC00DD3507 /* CalmView.swift */,
+				EC275E1C2CB3DAFA00DD3507 /* Emotion_4.swift */,
+				EC275E1A2CB3DACC00DD3507 /* Emotin_2.swift */,
+				EC275E182CB3DA8300DD3507 /* Emotion_3.swift */,
+				EC275E162CB3DA3000DD3507 /* Emotion_1.swift */,
 				EC275E0A2CB2714400DD3507 /* ViewAnxious.swift */,
 				EC275E082CB270D300DD3507 /* ViewAngry.swift */,
 				EC275E042CB26E3700DD3507 /* GIFImage.swift */,
@@ -284,7 +296,11 @@
 			files = (
 				EC275E092CB270D300DD3507 /* ViewAngry.swift in Sources */,
 				EC275E052CB26E4400DD3507 /* GIFImage.swift in Sources */,
-				FCE9BC462CABE65E005CA396 /* ContentView.swift in Sources */,
+				EC275E1D2CB3DAFA00DD3507 /* Emotion_4.swift in Sources */,
+				EC275E1B2CB3DACC00DD3507 /* Emotin_2.swift in Sources */,
+				EC275E192CB3DA8300DD3507 /* Emotion_3.swift in Sources */,
+				EC275E172CB3DA3000DD3507 /* Emotion_1.swift in Sources */,
+				FCE9BC462CABE65E005CA396 /* ContentOhoud.swift in Sources */,
 				EC275E0D2CB271AC00DD3507 /* CalmView.swift in Sources */,
 				FCE9BC442CABE65E005CA396 /* start_projectApp.swift in Sources */,
 				EC275E012CAD332B00DD3507 /* ViewSad.swift in Sources */,

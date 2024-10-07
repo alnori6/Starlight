@@ -11,7 +11,7 @@ import SwiftUI
 struct start_projectApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentOhoud()
             ViewSad()
             CalmView()
             ViewAngry()

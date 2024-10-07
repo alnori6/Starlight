@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct ContentView: View {
+struct ContentOhoud: View {
     @State private var selectedTab = 0
     
     var body: some View {
@@ -113,5 +113,5 @@ struct EmotionView: View {
 }
 
 #Preview {
-    ContentView()
+    ContentOhoud()
 }

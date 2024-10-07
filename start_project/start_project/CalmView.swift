@@ -33,6 +33,8 @@ struct CalmView: View{
             .padding(.bottom, 320)
             
             VStack {
+                Spacer()
+                    .padding(.bottom, 21.0)
                 Button(action: {
                     print("Relationship Button Pressed")
                 }) {
@@ -68,27 +70,26 @@ struct CalmView: View{
                         .foregroundColor(.black)
                         .font(.headline)
                 }
+                Spacer()
+                NavigationLink(destination: Emotion_1()) {
+                    Image("next")
+                        //.padding([.top, .trailing])
+                        .frame(maxWidth: .infinity)
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
+                       .padding(.leading, 300)
+                       .padding(.trailing, 30)
+                       
+                }
+                
             }
             .padding(.top, 270)
             .padding(90)
-            
-            Button(action: {
-            presentationMode.wrappedValue.dismiss()
-            }) {
-            Image("next")
-            .resizable()
-            .frame(width: 18.5, height: 17)
-            .foregroundColor(.white)
-            .padding()
-            .background(Color.clear)
-            .cornerRadius(10)
-            .offset(x: 140, y: 230)
-            }
         }
         // .navigationBarBackButtonHidden(true)
     }
 }
 
 #Preview {
-    ContentView() // Previewing ViewSad instead of ContentView
+    ContentOhoud() // Previewing ViewSad instead of ContentView
 }
