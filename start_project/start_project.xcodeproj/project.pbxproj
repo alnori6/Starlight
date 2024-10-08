@@ -22,6 +22,21 @@
 		B134D8F22CB275C3003FB8EA /* angerFeeling.MP4 in Resources */ = {isa = PBXBuildFile; fileRef = B134D8F12CB275C3003FB8EA /* angerFeeling.MP4 */; };
 		B134D8F42CB27625003FB8EA /* AnxietyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B134D8F32CB27625003FB8EA /* AnxietyView.swift */; };
 		B134D8F62CB27674003FB8EA /* AnxietyVidoeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B134D8F52CB27674003FB8EA /* AnxietyVidoeView.swift */; };
+		B134D8F82CB3D1E2003FB8EA /* CalmEmotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = B134D8F72CB3D1E2003FB8EA /* CalmEmotion.swift */; };
+		B134D8FC2CB3D33C003FB8EA /* SadEmotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = B134D8FB2CB3D33C003FB8EA /* SadEmotion.swift */; };
+		B134D8FE2CB3D3EE003FB8EA /* AnxietyEmotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = B134D8FD2CB3D3EE003FB8EA /* AnxietyEmotion.swift */; };
+		B134D9002CB3D45F003FB8EA /* AngerEmotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = B134D8FF2CB3D45F003FB8EA /* AngerEmotion.swift */; };
+		B134D9042CB3D6BE003FB8EA /* SF-Pro-Rounded-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B134D9032CB3D6BE003FB8EA /* SF-Pro-Rounded-Regular.ttf */; };
+		B134D9072CB3D9BF003FB8EA /* SF-Pro-Rounded-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B134D9062CB3D9BF003FB8EA /* SF-Pro-Rounded-Bold.otf */; };
+		B134D9092CB3DBA5003FB8EA /* SF-Pro-Rounded-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = B134D9082CB3DBA5003FB8EA /* SF-Pro-Rounded-Regular.otf */; };
+		B134D90B2CB4774A003FB8EA /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B134D90A2CB4774A003FB8EA /* HomePage.swift */; };
+		B134D90D2CB52E0E003FB8EA /* SplashPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B134D90C2CB52E0E003FB8EA /* SplashPage.swift */; };
+		B134D9132CB52FB6003FB8EA /* GIFImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B134D9122CB52FB6003FB8EA /* GIFImage.swift */; };
+		B134D9152CB53163003FB8EA /* SadTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B134D9142CB53163003FB8EA /* SadTabView.swift */; };
+		B134D9172CB53170003FB8EA /* CalmTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B134D9162CB53170003FB8EA /* CalmTabView.swift */; };
+		B134D9192CB5318C003FB8EA /* AngeryTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B134D9182CB5318C003FB8EA /* AngeryTabView.swift */; };
+		B134D91D2CB532FB003FB8EA /* AnxietyTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B134D91C2CB532FB003FB8EA /* AnxietyTabView.swift */; };
+		B134D91F2CB5D0D7003FB8EA /* animation.gif in Resources */ = {isa = PBXBuildFile; fileRef = B134D91E2CB5D0D7003FB8EA /* animation.gif */; };
 		FCE9BC442CABE65E005CA396 /* start_projectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE9BC432CABE65E005CA396 /* start_projectApp.swift */; };
 		FCE9BC462CABE65E005CA396 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE9BC452CABE65E005CA396 /* ContentView.swift */; };
 		FCE9BC482CABE660005CA396 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCE9BC472CABE660005CA396 /* Assets.xcassets */; };
@@ -64,6 +79,22 @@
 		B134D8F12CB275C3003FB8EA /* angerFeeling.MP4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = angerFeeling.MP4; sourceTree = "<group>"; };
 		B134D8F32CB27625003FB8EA /* AnxietyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnxietyView.swift; sourceTree = "<group>"; };
 		B134D8F52CB27674003FB8EA /* AnxietyVidoeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnxietyVidoeView.swift; sourceTree = "<group>"; };
+		B134D8F72CB3D1E2003FB8EA /* CalmEmotion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalmEmotion.swift; sourceTree = "<group>"; };
+		B134D8FB2CB3D33C003FB8EA /* SadEmotion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SadEmotion.swift; sourceTree = "<group>"; };
+		B134D8FD2CB3D3EE003FB8EA /* AnxietyEmotion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnxietyEmotion.swift; sourceTree = "<group>"; };
+		B134D8FF2CB3D45F003FB8EA /* AngerEmotion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AngerEmotion.swift; sourceTree = "<group>"; };
+		B134D9032CB3D6BE003FB8EA /* SF-Pro-Rounded-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Regular.ttf"; sourceTree = "<group>"; };
+		B134D9052CB3D6D9003FB8EA /* start-project-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "start-project-Info.plist"; sourceTree = SOURCE_ROOT; };
+		B134D9062CB3D9BF003FB8EA /* SF-Pro-Rounded-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Bold.otf"; sourceTree = "<group>"; };
+		B134D9082CB3DBA5003FB8EA /* SF-Pro-Rounded-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Regular.otf"; sourceTree = "<group>"; };
+		B134D90A2CB4774A003FB8EA /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
+		B134D90C2CB52E0E003FB8EA /* SplashPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPage.swift; sourceTree = "<group>"; };
+		B134D9122CB52FB6003FB8EA /* GIFImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFImage.swift; sourceTree = "<group>"; };
+		B134D9142CB53163003FB8EA /* SadTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SadTabView.swift; sourceTree = "<group>"; };
+		B134D9162CB53170003FB8EA /* CalmTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalmTabView.swift; sourceTree = "<group>"; };
+		B134D9182CB5318C003FB8EA /* AngeryTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AngeryTabView.swift; sourceTree = "<group>"; };
+		B134D91C2CB532FB003FB8EA /* AnxietyTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnxietyTabView.swift; sourceTree = "<group>"; };
+		B134D91E2CB5D0D7003FB8EA /* animation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = animation.gif; sourceTree = "<group>"; };
 		FCE9BC402CABE65E005CA396 /* start_project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = start_project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCE9BC432CABE65E005CA396 /* start_projectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = start_projectApp.swift; sourceTree = "<group>"; };
 		FCE9BC452CABE65E005CA396 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -101,6 +132,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B134D9012CB3D68E003FB8EA /* Project_Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B134D9082CB3DBA5003FB8EA /* SF-Pro-Rounded-Regular.otf */,
+				B134D9062CB3D9BF003FB8EA /* SF-Pro-Rounded-Bold.otf */,
+				B134D9032CB3D6BE003FB8EA /* SF-Pro-Rounded-Regular.ttf */,
+			);
+			path = Project_Fonts;
+			sourceTree = "<group>";
+		};
 		FCE9BC372CABE65E005CA396 = {
 			isa = PBXGroup;
 			children = (
@@ -124,19 +165,33 @@
 		FCE9BC422CABE65E005CA396 /* start_project */ = {
 			isa = PBXGroup;
 			children = (
+				B134D9052CB3D6D9003FB8EA /* start-project-Info.plist */,
+				B134D9012CB3D68E003FB8EA /* Project_Fonts */,
 				FCE9BC432CABE65E005CA396 /* start_projectApp.swift */,
+				B134D90C2CB52E0E003FB8EA /* SplashPage.swift */,
+				B134D91E2CB5D0D7003FB8EA /* animation.gif */,
 				FCE9BC452CABE65E005CA396 /* ContentView.swift */,
+				B134D9142CB53163003FB8EA /* SadTabView.swift */,
+				B134D9162CB53170003FB8EA /* CalmTabView.swift */,
+				B134D9182CB5318C003FB8EA /* AngeryTabView.swift */,
+				B134D91C2CB532FB003FB8EA /* AnxietyTabView.swift */,
+				B134D90A2CB4774A003FB8EA /* HomePage.swift */,
+				B134D8F72CB3D1E2003FB8EA /* CalmEmotion.swift */,
 				B134D8DF2CB269A4003FB8EA /* CalmView.swift */,
 				B134D8E12CB26A84003FB8EA /* CalmPlayerView.swift */,
+				B134D8FF2CB3D45F003FB8EA /* AngerEmotion.swift */,
 				B134D8ED2CB2707D003FB8EA /* AngerView.swift */,
 				B134D8EF2CB270D2003FB8EA /* AngerVideoView.swift */,
+				B134D8FD2CB3D3EE003FB8EA /* AnxietyEmotion.swift */,
 				B134D8F32CB27625003FB8EA /* AnxietyView.swift */,
 				B134D8F52CB27674003FB8EA /* AnxietyVidoeView.swift */,
+				B134D8FB2CB3D33C003FB8EA /* SadEmotion.swift */,
 				B134D8EB2CB26E87003FB8EA /* SadView.swift */,
 				B134D8E92CB26C66003FB8EA /* SadPlayerView.swift */,
 				B134D8E32CB26B1B003FB8EA /* PlaybackButtonControl.swift */,
 				B134D8E52CB26B79003FB8EA /* AudioManager.swift */,
 				B134D8E72CB26BB1003FB8EA /* Extentions.swift */,
+				B134D9122CB52FB6003FB8EA /* GIFImage.swift */,
 				FCE9BC472CABE660005CA396 /* Assets.xcassets */,
 				B134D8F12CB275C3003FB8EA /* angerFeeling.MP4 */,
 				B134D8DD2CB26883003FB8EA /* anxietyFeeling.MP4 */,
@@ -277,9 +332,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B134D8F22CB275C3003FB8EA /* angerFeeling.MP4 in Resources */,
+				B134D9072CB3D9BF003FB8EA /* SF-Pro-Rounded-Bold.otf in Resources */,
 				FCE9BC4B2CABE660005CA396 /* Preview Assets.xcassets in Resources */,
 				FCE9BC482CABE660005CA396 /* Assets.xcassets in Resources */,
+				B134D9042CB3D6BE003FB8EA /* SF-Pro-Rounded-Regular.ttf in Resources */,
+				B134D9092CB3DBA5003FB8EA /* SF-Pro-Rounded-Regular.otf in Resources */,
 				B134D8DB2CB26732003FB8EA /* sadFeeling.mp3 in Resources */,
+				B134D91F2CB5D0D7003FB8EA /* animation.gif in Resources */,
 				B134D8DE2CB26883003FB8EA /* anxietyFeeling.MP4 in Resources */,
 				B134D8D92CB26722003FB8EA /* calmFeeling.mp3 in Resources */,
 			);
@@ -306,17 +365,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B134D8F82CB3D1E2003FB8EA /* CalmEmotion.swift in Sources */,
+				B134D90B2CB4774A003FB8EA /* HomePage.swift in Sources */,
 				B134D8F62CB27674003FB8EA /* AnxietyVidoeView.swift in Sources */,
+				B134D90D2CB52E0E003FB8EA /* SplashPage.swift in Sources */,
+				B134D9152CB53163003FB8EA /* SadTabView.swift in Sources */,
+				B134D9002CB3D45F003FB8EA /* AngerEmotion.swift in Sources */,
 				B134D8EC2CB26E87003FB8EA /* SadView.swift in Sources */,
 				B134D8F42CB27625003FB8EA /* AnxietyView.swift in Sources */,
 				B134D8F02CB270D2003FB8EA /* AngerVideoView.swift in Sources */,
 				B134D8E62CB26B79003FB8EA /* AudioManager.swift in Sources */,
+				B134D9192CB5318C003FB8EA /* AngeryTabView.swift in Sources */,
 				B134D8E22CB26A84003FB8EA /* CalmPlayerView.swift in Sources */,
+				B134D9172CB53170003FB8EA /* CalmTabView.swift in Sources */,
+				B134D9132CB52FB6003FB8EA /* GIFImage.swift in Sources */,
 				FCE9BC462CABE65E005CA396 /* ContentView.swift in Sources */,
 				B134D8E42CB26B1B003FB8EA /* PlaybackButtonControl.swift in Sources */,
 				FCE9BC442CABE65E005CA396 /* start_projectApp.swift in Sources */,
 				B134D8EE2CB2707D003FB8EA /* AngerView.swift in Sources */,
 				B134D8E02CB269A4003FB8EA /* CalmView.swift in Sources */,
+				B134D91D2CB532FB003FB8EA /* AnxietyTabView.swift in Sources */,
+				B134D8FE2CB3D3EE003FB8EA /* AnxietyEmotion.swift in Sources */,
+				B134D8FC2CB3D33C003FB8EA /* SadEmotion.swift in Sources */,
 				B134D8EA2CB26C66003FB8EA /* SadPlayerView.swift in Sources */,
 				B134D8E82CB26BB1003FB8EA /* Extentions.swift in Sources */,
 			);
@@ -484,6 +554,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"start_project/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "start-project-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -512,6 +583,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"start_project/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "start-project-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

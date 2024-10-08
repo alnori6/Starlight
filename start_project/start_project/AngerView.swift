@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct AngerView: View {
+    @Environment(\.presentationMode) var presentationMode
     
     @State private var showVideoPlayer = false
     
@@ -20,6 +21,9 @@ struct AngerView: View {
                     .scaledToFill()
                     .frame(width: UIScreen.main.bounds.width)
                     .ignoresSafeArea()
+                    .navigationBarItems(
+                        trailing: NavigationLink( destination: HomePage(), label: {Image(systemName: "homekit")
+                        }))
                 
                 VStack{
                     
@@ -47,11 +51,11 @@ struct AngerView: View {
                 // .fullScreenCover(isPresented: $showVideoPlayer){
                 //AngerVideoView()
                 //}
-            }
+            }.navigationBarBackButtonHidden(true)
         }
     }
 
 
 #Preview {
-    AngerView()
+    AngerView().environmentObject(AudioManager())
 }

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SadView: View {
-    
+    @Environment(\.presentationMode) var presentationMode
     @State private var showPlayer = false
     
     var body: some View {
@@ -20,6 +20,10 @@ struct SadView: View {
                 .scaledToFill()
                 .frame(width: UIScreen.main.bounds.width)
                 .ignoresSafeArea()
+                .navigationBarItems(
+                    trailing: NavigationLink( destination: HomePage(), label: {Image(systemName: "homekit")
+                    }))
+            
             
             VStack{
                 
@@ -43,9 +47,9 @@ struct SadView: View {
                     
                 }
             .ignoresSafeArea()
-           // .fullScreenCover(isPresented: $showPlayer){
-              //  SadPlayerView(sadVM: sadVM)
-            }
+            .fullScreenCover(isPresented: $showPlayer){
+                SadPlayerView()}
+            }.navigationBarBackButtonHidden(true)
         }
         
     }

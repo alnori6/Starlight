@@ -59,5 +59,5 @@ struct AnxietyVidoeView: View {
 }
 
 #Preview {
-    AnxietyVidoeView()
+    AnxietyVidoeView().environmentObject(AudioManager())
 }

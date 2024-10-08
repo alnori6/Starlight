@@ -61,5 +61,5 @@ struct AngerVideoView: View {
 }
 
 #Preview {
-    AngerVideoView()
+    AngerVideoView().environmentObject(AudioManager())
 }

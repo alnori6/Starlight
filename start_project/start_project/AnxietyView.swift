@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct AnxietyView: View {
+    @Environment(\.presentationMode) var presentationMode
     var body: some View {
         
         NavigationView{
@@ -18,6 +19,10 @@ struct AnxietyView: View {
                     .scaledToFill()
                     .frame(width: UIScreen.main.bounds.width)
                     .ignoresSafeArea()
+                    .navigationBarItems(
+                        trailing: NavigationLink( destination: HomePage(), label: {Image(systemName: "homekit")
+                        }))
+                
                 
                 VStack{
                     
@@ -45,10 +50,10 @@ struct AnxietyView: View {
                 // .fullScreenCover(isPresented: $showVideoPlayer){
                 //AngerVideoView()
                 //}
-            }
+            }.navigationBarBackButtonHidden(true)
     }
 }
 
 #Preview {
-    AnxietyView()
+    AnxietyView().environmentObject(AudioManager())
 }

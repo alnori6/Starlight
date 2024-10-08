@@ -9,44 +9,56 @@ import SwiftUI
 
 struct CalmView: View {
     
+    @Environment(\.presentationMode) var presentationMode
     // @StateObject var calmVM: CalmViewModel
      @State private var showPlayer = false
     
     var body: some View {
-        ZStack {
-            
-            Image("background2")
-                .resizable()
-                .scaledToFill()
-                .frame(width: UIScreen.main.bounds.width)
-                .ignoresSafeArea()
-            
-            VStack{
+        
+        
+            ZStack {
                 
-                Text("Calm")
-                    .font(Font.custom("SFProRounded-Bold", size: 40))
-                    .font(.title)
-                    .foregroundColor(Color.white)
-                // .padding(.bottom, 144.0)
-                Spacer()
-            }
-            .padding(.top, 122.0)
-            
-            VStack(spacing: 50){
-                Text("Here is a segment of podcast with related insight")
-                    .font(Font.custom("SFProRounded-Bold", size: 16))
-                    .foregroundColor(Color(red: 0.24705882352941178, green: 0.29411764705882354, blue: 0.4980392156862745))
+                Image("background2")
+                    .resizable()
+                    .ignoresSafeArea()
+                    .frame(width: UIScreen.main.bounds.width,height: UIScreen.main.bounds.height)
+                    .navigationBarItems(
+                        trailing: NavigationLink( destination: HomePage(), label: {Image(systemName: "homekit")
+                        }))
+                    .navigationBarBackButtonHidden(true)
+                //                .resizable()
+                //                .scaledToFill()
+                //                .frame(width: UIScreen.main.bounds.width)
+                //                .ignoresSafeArea()
                 
-//                    NavigationLink(destination: PlayerView()){
+                VStack{
+                    
+                    
+                    Text("Calm")
+                        .font(Font.custom("SFProRounded-Bold", size: 40))
+                        .font(.title)
+                        .foregroundColor(Color.white)
+                    
+                    // .padding(.bottom, 144.0)
+                    Spacer()
+                }
+                .padding(.top, 122.0)
+                
+                VStack(spacing: 50){
+                    Text("Here is a segment of podcast with related insight")
+                        .font(Font.custom("SFProRounded-Bold", size: 16))
+                        .foregroundColor(Color(red: 0.24705882352941178, green: 0.29411764705882354, blue: 0.4980392156862745))
+                    
+                    //                    NavigationLink(destination: PlayerView()){
                     Button(action:{showPlayer = true}) {Image("podcastimage_1").resizable().frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: 65)
                     }
                     
                 }
-            .ignoresSafeArea()
-           // .fullScreenCover(isPresented: $showPlayer){
-             //   PlayerView(sadVM: sadVM)
-           // }
-        }
+                .ignoresSafeArea()
+                .fullScreenCover(isPresented: $showPlayer){
+                    CalmPlayerView()
+                }
+             }.navigationBarBackButtonHidden(true)
     }
 }
 
