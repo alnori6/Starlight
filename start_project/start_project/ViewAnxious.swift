@@ -77,7 +77,7 @@ struct ViewAnxious: View{
                 }
                 
                 Spacer()
-                NavigationLink(destination: Emotion_3()) {
+                NavigationLink(destination: ContentOhoud()) {
                     Image("next")
                         //.padding([.top, .trailing])
                         .frame(maxWidth: .infinity)

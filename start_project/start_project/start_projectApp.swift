@@ -11,13 +11,7 @@ import SwiftUI
 struct start_projectApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentOhoud()
-            ViewSad()
-            CalmView()
-            ViewAngry()
-            ViewAnxious()
             splash_page()
-            GIFImage(name: "animation")
         }
     }
 }

@@ -7,18 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EC134EF62CAD31C200F077C7 /* SwiftUIViewSad1.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC134EF52CAD31B400F077C7 /* SwiftUIViewSad1.swift */; };
 		EC275E012CAD332B00DD3507 /* ViewSad.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC275E002CAD332B00DD3507 /* ViewSad.swift */; };
 		EC275E032CB26E1300DD3507 /* animation.gif in Resources */ = {isa = PBXBuildFile; fileRef = EC275E022CB26E1300DD3507 /* animation.gif */; };
 		EC275E052CB26E4400DD3507 /* GIFImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC275E042CB26E3700DD3507 /* GIFImage.swift */; };
 		EC275E072CB26E6200DD3507 /* splash_page.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC275E062CB26E5600DD3507 /* splash_page.swift */; };
 		EC275E092CB270D300DD3507 /* ViewAngry.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC275E082CB270D300DD3507 /* ViewAngry.swift */; };
 		EC275E0B2CB2714400DD3507 /* ViewAnxious.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC275E0A2CB2714400DD3507 /* ViewAnxious.swift */; };
-		EC275E0D2CB271AC00DD3507 /* CalmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC275E0C2CB271AC00DD3507 /* CalmView.swift */; };
-		EC275E172CB3DA3000DD3507 /* Emotion_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC275E162CB3DA3000DD3507 /* Emotion_1.swift */; };
-		EC275E192CB3DA8300DD3507 /* Emotion_3.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC275E182CB3DA8300DD3507 /* Emotion_3.swift */; };
-		EC275E1B2CB3DACC00DD3507 /* Emotin_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC275E1A2CB3DACC00DD3507 /* Emotin_2.swift */; };
-		EC275E1D2CB3DAFA00DD3507 /* Emotion_4.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC275E1C2CB3DAFA00DD3507 /* Emotion_4.swift */; };
+		EC275E0D2CB271AC00DD3507 /* ViewCalm.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC275E0C2CB271AC00DD3507 /* ViewCalm.swift */; };
 		FCE9BC442CABE65E005CA396 /* start_projectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE9BC432CABE65E005CA396 /* start_projectApp.swift */; };
 		FCE9BC462CABE65E005CA396 /* ContentOhoud.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE9BC452CABE65E005CA396 /* ContentOhoud.swift */; };
 		FCE9BC482CABE660005CA396 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCE9BC472CABE660005CA396 /* Assets.xcassets */; };
@@ -46,18 +41,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		EC134EF52CAD31B400F077C7 /* SwiftUIViewSad1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewSad1.swift; sourceTree = "<group>"; };
 		EC275E002CAD332B00DD3507 /* ViewSad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewSad.swift; sourceTree = "<group>"; };
 		EC275E022CB26E1300DD3507 /* animation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = animation.gif; sourceTree = "<group>"; };
 		EC275E042CB26E3700DD3507 /* GIFImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFImage.swift; sourceTree = "<group>"; };
 		EC275E062CB26E5600DD3507 /* splash_page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = splash_page.swift; sourceTree = "<group>"; };
 		EC275E082CB270D300DD3507 /* ViewAngry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewAngry.swift; sourceTree = "<group>"; };
 		EC275E0A2CB2714400DD3507 /* ViewAnxious.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewAnxious.swift; sourceTree = "<group>"; };
-		EC275E0C2CB271AC00DD3507 /* CalmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalmView.swift; sourceTree = "<group>"; };
-		EC275E162CB3DA3000DD3507 /* Emotion_1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emotion_1.swift; sourceTree = "<group>"; };
-		EC275E182CB3DA8300DD3507 /* Emotion_3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emotion_3.swift; sourceTree = "<group>"; };
-		EC275E1A2CB3DACC00DD3507 /* Emotin_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emotin_2.swift; sourceTree = "<group>"; };
-		EC275E1C2CB3DAFA00DD3507 /* Emotion_4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emotion_4.swift; sourceTree = "<group>"; };
+		EC275E0C2CB271AC00DD3507 /* ViewCalm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCalm.swift; sourceTree = "<group>"; };
 		FCE9BC402CABE65E005CA396 /* start_project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = start_project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCE9BC432CABE65E005CA396 /* start_projectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = start_projectApp.swift; sourceTree = "<group>"; };
 		FCE9BC452CABE65E005CA396 /* ContentOhoud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentOhoud.swift; sourceTree = "<group>"; };
@@ -121,16 +111,11 @@
 				FCE9BC432CABE65E005CA396 /* start_projectApp.swift */,
 				FCE9BC452CABE65E005CA396 /* ContentOhoud.swift */,
 				EC275E002CAD332B00DD3507 /* ViewSad.swift */,
-				EC275E0C2CB271AC00DD3507 /* CalmView.swift */,
-				EC275E1C2CB3DAFA00DD3507 /* Emotion_4.swift */,
-				EC275E1A2CB3DACC00DD3507 /* Emotin_2.swift */,
-				EC275E182CB3DA8300DD3507 /* Emotion_3.swift */,
-				EC275E162CB3DA3000DD3507 /* Emotion_1.swift */,
+				EC275E0C2CB271AC00DD3507 /* ViewCalm.swift */,
 				EC275E0A2CB2714400DD3507 /* ViewAnxious.swift */,
 				EC275E082CB270D300DD3507 /* ViewAngry.swift */,
 				EC275E042CB26E3700DD3507 /* GIFImage.swift */,
 				EC275E062CB26E5600DD3507 /* splash_page.swift */,
-				EC134EF52CAD31B400F077C7 /* SwiftUIViewSad1.swift */,
 				FCE9BC472CABE660005CA396 /* Assets.xcassets */,
 				EC275E022CB26E1300DD3507 /* animation.gif */,
 				FCE9BC492CABE660005CA396 /* Preview Content */,
@@ -296,15 +281,10 @@
 			files = (
 				EC275E092CB270D300DD3507 /* ViewAngry.swift in Sources */,
 				EC275E052CB26E4400DD3507 /* GIFImage.swift in Sources */,
-				EC275E1D2CB3DAFA00DD3507 /* Emotion_4.swift in Sources */,
-				EC275E1B2CB3DACC00DD3507 /* Emotin_2.swift in Sources */,
-				EC275E192CB3DA8300DD3507 /* Emotion_3.swift in Sources */,
-				EC275E172CB3DA3000DD3507 /* Emotion_1.swift in Sources */,
 				FCE9BC462CABE65E005CA396 /* ContentOhoud.swift in Sources */,
-				EC275E0D2CB271AC00DD3507 /* CalmView.swift in Sources */,
+				EC275E0D2CB271AC00DD3507 /* ViewCalm.swift in Sources */,
 				FCE9BC442CABE65E005CA396 /* start_projectApp.swift in Sources */,
 				EC275E012CAD332B00DD3507 /* ViewSad.swift in Sources */,
-				EC134EF62CAD31C200F077C7 /* SwiftUIViewSad1.swift in Sources */,
 				EC275E072CB26E6200DD3507 /* splash_page.swift in Sources */,
 				EC275E0B2CB2714400DD3507 /* ViewAnxious.swift in Sources */,
 			);

@@ -77,7 +77,7 @@ struct ViewAngry: View{
                 }
                 
                 Spacer()
-                NavigationLink(destination: Emotion_4()) {
+                NavigationLink(destination: ContentOhoud()) {
                     Image("next")
                         //.padding([.top, .trailing])
                         .frame(maxWidth: .infinity)

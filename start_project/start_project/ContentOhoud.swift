@@ -5,6 +5,7 @@ struct ContentOhoud: View {
     
     var body: some View {
         NavigationView {
+            
             ZStack {
                 Image("background1")
                     .resizable()
@@ -13,26 +14,31 @@ struct ContentOhoud: View {
                 
                 VStack {
                     TabView(selection: $selectedTab) {
-                        EmotionView(emotion: "Sad", imageName: "sit_sad", destination: AnyView(ViewSad()))
+                        EmotionView(emotion: "Sad", imageName: "sit_sad", destination: AnyView(ViewSad()), selectedTab: $selectedTab)
                             .tag(0)
 
-                        EmotionView(emotion: "Angry", imageName: "sit_angry", destination: AnyView(ViewAngry()))
+                        EmotionView(emotion: "Angry", imageName: "sit_angry", destination: AnyView(ViewAngry()), selectedTab: $selectedTab)
                             .tag(1)
 
-                        EmotionView(emotion: "Anxious", imageName: "sit_grumpy", destination: AnyView(ViewAnxious()))
+                        EmotionView(emotion: "Anxious", imageName: "sit_grumpy", destination: AnyView(ViewAnxious()), selectedTab: $selectedTab)
                             .tag(2)
 
-                        EmotionView(emotion: "Calm", imageName: "sit_smile", destination: AnyView(CalmView()))
+                        EmotionView(emotion: "Calm", imageName: "sit_smile", destination: AnyView(ViewCalm()), selectedTab: $selectedTab)
                             .tag(3)
                     }
                     .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
                     
-                    CustomTabBar(selectedTab: $selectedTab)
-                        .padding(.bottom, 10)
+                    
+//                        .padding(.bottom, -50)
                 }
-            }
+            } // zstack
         }
     }
+    
+    
+    
+    
+    
 }
 
 struct CustomTabBar: View {
@@ -45,11 +51,14 @@ struct CustomTabBar: View {
             TabBarItem(imageName: "smolAnx", index: 2, selectedTab: $selectedTab)
             TabBarItem(imageName: "smolCalm", index: 3, selectedTab: $selectedTab)
         }
-        .padding(.bottom, 100.0)
+//        .padding(.bottom, 190.0)
         .background(Color.clear)
         .cornerRadius(10)
         .shadow(color: Color.gray.opacity(0.5), radius: 5, x: 0, y: 5)
+        
     }
+    
+    
 }
 
 struct TabBarItem: View {
@@ -63,10 +72,11 @@ struct TabBarItem: View {
         }) {
             Image(imageName)
                 .resizable()
-                .frame(width: 80, height: 50)
-                .padding([.bottom, .trailing], 9)
+                .frame(width: 80, height: 60)
+//                .padding([.top, .trailing], 10)
                 .background(selectedTab == index ? Color.gray.opacity(0.3) : Color.clear)
                 .cornerRadius(10)
+                .padding(7) //spaces between clouds
         }
         .buttonStyle(PlainButtonStyle())
     }
@@ -76,6 +86,7 @@ struct EmotionView: View {
     var emotion: String
     var imageName: String
     var destination: AnyView
+    @Binding var selectedTab: Int
     
     var body: some View {
         VStack {
@@ -83,32 +94,48 @@ struct EmotionView: View {
                 .font(.custom("SFProRounded", size: 40))
                 .fontWeight(.bold)
                 .foregroundColor(Color.white)
-                .padding(.top, 180.0)
+                .padding(.top , 5)
+                
+                
             
             Text("I feel \(emotion.lowercased())")
                 .font(.custom("SFProRounded", size: 34))
                 .multilineTextAlignment(.leading)
-                .foregroundColor(Color(red: 0.247, green: 0.294, blue: 0.498))
-                .padding([.top, .trailing], 150)
+                .foregroundColor(Color("textColor"))
+                .padding(.leading, -120)
+                .padding(.top , 50)
+
             
             Image(imageName)
                 .resizable()
-                .frame(width: 230, height: 180)
-                .padding([.top, .trailing], 40)
+                .frame(width: 250, height: 180)
+                .padding(.leading, -110)
 
-            Spacer()
+
+            Spacer().frame(height: 70)
+            //this is all the clouds emotions
+            CustomTabBar(selectedTab: $selectedTab)
             
-            NavigationLink(destination: destination) {
-                Image("next")
-                    .padding()
-                    .frame(maxWidth: .infinity)
-                    .foregroundColor(.white)
-                    .cornerRadius(10)
-                    .padding(.leading, 300)
-            }
-            .padding(.bottom, 50)
+
+
+            HStack {
+                
+                NavigationLink(destination: destination) {
+                    Image("next")
+                        .resizable()
+                        .frame(width: 20, height: 20)
+                        .background(Color.white.opacity(0.1))
+                        .cornerRadius(30)
+                        .shadow(radius: 5)
+                }.padding(.leading, 320)
+                    .padding(.top, 150)
+                    .padding(.bottom, -90)
+                    
+            }//hstack for the navigator
+            
+            
         }
-        .padding()
+
     }
 }
 

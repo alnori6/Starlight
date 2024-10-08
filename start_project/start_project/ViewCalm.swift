@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct CalmView: View{
+struct ViewCalm: View{
     @Environment(\.presentationMode) var presentationMode
     @State private var selectedChoice: String?
     var body: some View {
