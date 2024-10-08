@@ -76,7 +76,7 @@ struct CalmView: View{
                         .font(.headline)
                 }
                 Spacer()
-                NavigationLink(destination: Emotin_2()) {
+                NavigationLink(destination: ContentOhoud()) {
                     Image("next")
                         //.padding([.top, .trailing])
                         .frame(maxWidth: .infinity)
