@@ -28,15 +28,10 @@ struct SplashPage: View {
 //                        .edgesIgnoringSafeArea(.all)
 //                    
                     
-                    GIFImage(name: "animation")
-                        .frame(width: 200, height: 200)
-                        .edgesIgnoringSafeArea(.all)
-                        .offset(x: 0,y: 850)
-                        .scaleEffect(CGSize(width: 0.06, height: 0.06))
                     // Move the GIF up by 50 points
                     
                     // Other content
-                    Text("Heart Minds")
+                    Text("Where you Can \n Grow Emotionally")
                         .font(.custom("SFProRounded-Bold", size: 25))
                         .multilineTextAlignment(.leading)
                         .foregroundColor(Color(red: 0.24705882352941178, green: 0.29411764705882354, blue: 0.4980392156862745))
@@ -44,10 +39,18 @@ struct SplashPage: View {
                         .offset(x: 0,y: -85)
                         .fontWeight(.semibold)
                     
+                    
+                    GIFImage(name: "animation")
+                        .frame(width: 200, height: 200)
+                        .edgesIgnoringSafeArea(.all)
+                        .offset(x: 0,y: 850)
+                        .scaleEffect(CGSize(width: 0.06, height: 0.06))
+                    
+                    
                 }
             }
             .onAppear {
-                DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 8) {
                     withAnimation {
                         self.isActive = true
                     }
